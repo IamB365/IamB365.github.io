@@ -14,19 +14,14 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-
     background-color: #0f172a;
-
     color: #e2e8f0;
-
     line-height: 1.7;
 }
 
 main {
     max-width: 1000px;
-
     margin: auto;
-
     padding: 0 25px;
 }
 
@@ -37,37 +32,26 @@ main {
 
 header {
     background-color: rgba(15, 23, 42, 0.96);
-
     border-bottom: 1px solid #334155;
-
     position: sticky;
-
     top: 0;
-
     z-index: 100;
 }
 
 nav {
     max-width: 1000px;
-
     margin: auto;
-
     padding: 12px 25px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 }
 
 .brand {
     color: #38bdf8;
-
     font-size: 20px;
-
     font-weight: bold;
-
     text-decoration: none;
 }
 
@@ -82,27 +66,21 @@ nav {
 
 .header-socials {
     display: flex;
-
     align-items: center;
-
     gap: 12px;
 }
 
 .header-social-button {
     width: 40px;
-
     height: 40px;
 
     display: flex;
-
     align-items: center;
-
     justify-content: center;
 
     background-color: #293349;
 
     border: 1px solid #3b465d;
-
     border-radius: 8px;
 
     text-decoration: none;
@@ -115,23 +93,18 @@ nav {
 
 .header-social-button svg {
     width: 21px;
-
     height: 21px;
-
     fill: #3cff83;
 }
 
 .header-social-button:hover {
     transform: translateY(-2px);
-
     border-color: #3cff83;
-
     background-color: #343f56;
 }
 
 .header-social-button:focus {
     outline: 3px solid rgba(60, 255, 131, 0.35);
-
     outline-offset: 2px;
 }
 
@@ -142,23 +115,18 @@ nav {
 
 section {
     padding: 40px 0;
-
     border-bottom: 1px solid #334155;
 }
 
 section h2 {
     color: #38bdf8;
-
     font-size: 28px;
-
     margin-bottom: 20px;
 }
 
 section p {
     color: #cbd5e1;
-
     max-width: 800px;
-
     margin-bottom: 14px;
 }
 
@@ -169,19 +137,15 @@ section p {
 
 #about {
     padding-top: 50px;
-
     padding-bottom: 40px;
 }
 
 .hero {
     display: flex;
-
     align-items: center;
-
     justify-content: space-between;
 
     gap: 60px;
-
     margin-bottom: 30px;
 }
 
@@ -191,21 +155,15 @@ section p {
 
 .hello {
     color: #38bdf8 !important;
-
     font-size: 18px;
-
     font-weight: bold;
-
     margin-bottom: 4px !important;
 }
 
 .hero h1 {
     color: #ffffff;
-
     font-size: 52px;
-
     line-height: 1.2;
-
     margin-bottom: 0;
 }
 
@@ -213,13 +171,11 @@ section p {
     display: block;
 
     width: 220px;
-
     height: 220px;
 
     object-fit: cover;
 
     border-radius: 50%;
-
     border: 4px solid #38bdf8;
 
     padding: 5px;
@@ -247,7 +203,6 @@ section p {
     background-color: #1e293b;
 
     border: 1px solid #334155;
-
     border-radius: 12px;
 
     padding: 25px;
@@ -255,27 +210,20 @@ section p {
 
 .experience-card h3 {
     color: #ffffff;
-
     font-size: 22px;
-
     margin-bottom: 4px;
 }
 
 .experience-subtitle {
     color: #38bdf8 !important;
-
     font-weight: bold;
-
     margin-bottom: 15px !important;
 }
 
 .experience-skills {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 10px;
-
     margin-top: 20px;
 }
 
@@ -283,13 +231,11 @@ section p {
     background-color: #0f172a;
 
     border: 1px solid #475569;
-
     border-radius: 20px;
 
     color: #cbd5e1;
 
     font-size: 14px;
-
     padding: 7px 14px;
 }
 
@@ -304,21 +250,17 @@ section p {
 
 .tech-stack h2 {
     font-size: 24px;
-
     margin-bottom: 16px;
 }
 
 .tech-icon {
     color: #3cff83;
-
     margin-right: 5px;
 }
 
 .tech-list {
     display: flex;
-
     flex-wrap: wrap;
-
     gap: 12px;
 }
 
@@ -326,7 +268,6 @@ section p {
     background-color: #1e293b;
 
     border: 1px solid #334155;
-
     border-radius: 20px;
 
     color: #cbd5e1;
@@ -338,9 +279,7 @@ section p {
 
 .tech-list span:hover {
     color: #38bdf8;
-
     border-color: #38bdf8;
-
     transform: translateY(-2px);
 }
 
@@ -349,24 +288,67 @@ section p {
    ARTICLES
 ========================= */
 
+.article-link {
+    display: block;
+    max-width: 800px;
+    margin-top: 20px;
+    color: inherit;
+    text-decoration: none;
+}
+
 .article-card {
     background-color: #1e293b;
 
     border: 1px solid #334155;
-
     border-radius: 12px;
 
-    margin-top: 20px;
-
     padding: 25px;
+
+    transition:
+        transform 0.2s,
+        border-color 0.2s,
+        background-color 0.2s;
+}
+
+.article-link:hover .article-card {
+    transform: translateY(-3px);
+    border-color: #38bdf8;
+    background-color: #243147;
+}
+
+.article-source {
+    display: inline-block;
+
+    color: #3cff83;
+
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    margin-bottom: 10px;
 }
 
 .article-card h3 {
     color: #ffffff;
 
-    font-size: 20px;
+    font-size: 21px;
+    line-height: 1.4;
 
-    margin-bottom: 6px;
+    margin-bottom: 10px;
+}
+
+.article-card p {
+    margin-bottom: 14px;
+}
+
+.read-article {
+    color: #38bdf8;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.article-link:hover .read-article {
+    color: #7dd3fc;
 }
 
 
@@ -376,17 +358,13 @@ section p {
 
 footer {
     color: #64748b;
-
     font-size: 14px;
-
     padding: 22px;
-
     text-align: center;
 }
 
 .footer-name {
     color: #38bdf8;
-
     font-weight: 600;
 }
 
@@ -411,13 +389,11 @@ footer {
 
     .header-social-button {
         width: 34px;
-
         height: 34px;
     }
 
     .header-social-button svg {
         width: 18px;
-
         height: 18px;
     }
 
@@ -431,17 +407,14 @@ footer {
 
     #about {
         padding-top: 35px;
-
         padding-bottom: 35px;
     }
 
     .hero {
         flex-direction: column-reverse;
-
         align-items: flex-start;
 
         gap: 25px;
-
         margin-bottom: 28px;
     }
 
@@ -451,12 +424,19 @@ footer {
 
     .hero-photo img {
         width: 165px;
-
         height: 165px;
     }
 
     .tech-stack {
         margin-top: 32px;
+    }
+
+    .article-card {
+        padding: 20px;
+    }
+
+    .article-card h3 {
+        font-size: 19px;
     }
 }
 
@@ -469,14 +449,11 @@ footer {
 
     nav {
         flex-direction: column;
-
         align-items: flex-start;
-
         gap: 8px;
     }
 
     .header-socials {
         width: 100%;
     }
-
 }
